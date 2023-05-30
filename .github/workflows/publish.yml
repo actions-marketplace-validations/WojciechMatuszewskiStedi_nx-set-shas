@@ -16,4 +16,4 @@ jobs:
 
       - uses: jameshenry/publish-shell-action@v1
         with:
-          github-token: ${{ secrets.ENG_GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
