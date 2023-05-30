@@ -1,5 +1,4 @@
 {
-  "private": true,
   "version": "3.0.2",
   "license": "MIT",
   "description": "This package.json is here purely to control the version of the Action, in combination with https://github.com/JamesHenry/publish-shell-action",
@@ -7,6 +6,10 @@
     "build": "ncc build find-successful-workflow.js --license licenses.txt",
     "prepare": "is-ci || husky install"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/WojciechMatuszewskiStedi/nx-set-shas",
   "bugs": {
     "url": "https://github.com/nrwl/nx-set-shas/issues"
   },
